@@ -1,0 +1,166 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #22e96e;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #141414;
+    border-bottom: 2px solid #8a2be2;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #8a2be2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8a2be2;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background-color: #8a2be2;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #a042f5;
+    transform: scale(1.05);
+}
+
+/* Produtos */
+.produtos {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.grid-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    border: 1px solid #333;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #8a2be2;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    color: #8a2be2;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-card {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #8a2be2;
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #141414;
+    color: #777;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
